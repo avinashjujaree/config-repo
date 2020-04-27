@@ -1,0 +1,9 @@
+zuul:
+  #ignored-patterns: /inventory-api/** 
+  routes:
+    inventory-service:
+      path: /inventory-api/**
+      url: http://localhost:8082/inventory/
+    product-service:
+      path: /product-api/**
+      url: http://product-service/product/
