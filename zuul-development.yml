@@ -11,10 +11,3 @@ zuul:
     product-service:
       path: /product-api/**
       service-id: product-service
-management:
-  security:
-    enabled=false
-  endpoints:
-    web:
-       exposure:
-         include=*
