@@ -1,3 +1,7 @@
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka-zone-a:4002/eureka
 zuul:
   #ignored-patterns: /inventory-api/** 
   routes:
