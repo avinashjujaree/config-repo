@@ -3,7 +3,14 @@ zuul:
   routes:
     inventory-service:
       path: /inventory-api/**
-      url: http://localhost:8082/inventory/
+      service-id: inventory-service 
     product-service:
       path: /product-api/**
-      url: http://product-service/product/
+      service-id: product-service
+management:
+  security:
+    enabled=false
+  endpoints:
+    web:
+       exposure:
+         include=*
